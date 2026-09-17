@@ -4,7 +4,9 @@ import java.util.Random;
 
 public class Bmicalculator {
 
-   
+    /**
+     * Determines the health status classification based on the given BMI.
+     */
     public static String getBmiStatus(double bmi) {
         if (bmi < 18.5) {
             return "Underweight";
@@ -28,7 +30,7 @@ public class Bmicalculator {
 
         // Table Header
         System.out.println("=====================================================================");
-        System.out.printf("%-10s | %-12s | %-12s | %-8s | %-12s%n", 
+        System.out.printf("%-10s | %-12s | %-12s | %-8s | %-12s%n",
                 "Person", "Height (m)", "Weight (kg)", "BMI", "Status");
         System.out.println("=====================================================================");
 
@@ -65,6 +67,4 @@ public class Bmicalculator {
         // Print report
         printWellnessReport(heights, weights);
     }
-}
-    
 }
